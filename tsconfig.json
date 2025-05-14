@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",                          // Output modern JS
+    "module": "CommonJS",                        // Node.js compatible
+    "lib": ["ES2020"],                           // Include modern features
+    "outDir": "./dist",                          // Compiled output folder
+    "rootDir": "./src",                          // Source files location
+    "strict": true,                              // All strict type checks
+    "esModuleInterop": true,                     // For default imports
+    "forceConsistentCasingInFileNames": true,    // Avoid case errors
+    "skipLibCheck": true,                        // Speeds up builds
+    "resolveJsonModule": true,                   // Allow import of .json
+    "moduleResolution": "node",                  // Node-style module resolution
+    "baseUrl": "./src",                          // Required for paths aliasing
+    "paths": {
+      "@config/*": ["config/*"],
+      "@controllers/*": ["controllers/*"],
+      "@routes/*": ["routes/*"],
+      "@services/*": ["services/*"],
+      "@models/*": ["models/*"],
+      "@middlewares/*": ["middlewares/*"],
+      "@utils/*": ["utils/*"]
+    }
+  },
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules", "dist"]
+}

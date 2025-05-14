@@ -1,0 +1,52 @@
+{
+  "name": "node-express-management-system",
+  "version": "1.0.0",
+  "description": "A scalable, professional Node.js + Express backend for management systems",
+  "main": "server.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "dev": "ts-node -r tsconfig-paths/register ./server.ts"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "backend",
+    "api",
+    "scalable",
+    "jwt",
+    "management-system"
+  ],
+  "author": "Aditya Raghuvanshi",
+  "license": "MIT",
+  "dependencies": {
+    "aws-sdk": "^2.1537.0",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.21.2",
+    "express-async-handler": "^1.2.0",
+    "express-mongo-sanitize": "^2.2.0",
+    "express-rate-limit": "^6.7.0",
+    "express-validator": "^7.0.1",
+    "helmet": "^7.0.0",
+    "http-errors": "^2.0.0",
+    "joi": "^17.10.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.2.3",
+    "morgan": "^1.10.0",
+    "tsconfig-paths": "^4.2.0",
+    "uuid": "^9.0.1",
+    "xss-clean": "^0.1.1"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.18",
+    "@types/express": "^5.0.1",
+    "@types/morgan": "^1.9.9",
+    "@types/node": "^22.15.18",
+    "jest": "^29.7.0",
+    "nodemon": "^3.1.10",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  }
+}
